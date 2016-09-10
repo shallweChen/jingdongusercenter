@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JDusercenter</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/favicon.ico">
+		<link href="jd.css" type="text/css" rel="Stylesheet" />
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="main">
+			<div id="main_nav">
+				<h2>我的京东</h2>
+				<ul>
+					<li class="hover" name="jd_orders">我的订单</li>
+					<li name="record">消费记录</li>
+					<li name="record-FC">消费记录-FC</li>
+					<li name="lottery">幸运抽奖</li>
+				</ul>
+			</div>
+			<div class="main_show">
+				<div id="jd_orders">
+					<table width="100%">
+						<thead>
+							<tr>
+								<th width="400px">订单信息</th>
+								<th width="100px">收货人</th>
+								<th width="100px">订单金额</th>
+								<th width="100px">
+									<select name="" id="">
+										<option value="">最近三个月</option>
+									</select>	
+								</th>
+								<th width="100px">
+									<select name="" id="">
+										<option value="">全部状态</option>
+									</select>	
+								</th>
+								<th width="100px">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+					<!-- 分页条 -->
+					<ul id="pager">
+					</ul>
+				</div>
+				<div id="record">
+					<canvas id="canvas-buy-state">
+                        您的浏览器不支持canvas绘图
+                    </canvas>
+				</div>
+				<div id="record-FC">
+					消费统计（FC）
+				</div>
+				<div id="lottery">
+					幸运抽奖
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+
+		<!-- 登录对话框 -->
+		<div class="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<span></span>
+					<h3>用户登录</h3>
+					<p>请保管好您的注册信息，以防丢失。</p>
+					<form>
+						<input type="text" name="uname" placeholder="请输入登录用户名" value="qiangdong"><br>
+						<input type="password" name="upwd" placeholder="请输入登录密码" value="123456"><br>
+					</form>
+					<button id="btSubmit" type="button">提交注册信息</button><br>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/fusioncharts.js"></script>
+		<script src="js/fusioncharts.charts.js"></script>
+		<script src="js/jd.js"></script>
+	</body>
+</html>
